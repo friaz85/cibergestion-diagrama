@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 
 import { GojsAngularModule } from 'gojs-angular';
 import { GojsDiagramComponent } from './gojs-diagram/gojs-diagram.component';
-import { DiagramModule } from '@syncfusion/ej2-angular-diagrams';
+import { DiagramContextMenuService, DiagramModule } from '@syncfusion/ej2-angular-diagrams';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule } from '@angular/forms';
 
@@ -23,7 +23,7 @@ import { FormsModule } from '@angular/forms';
     NgbModule,
     FormsModule
   ],
-  providers: [],
+  providers: [DiagramContextMenuService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
